@@ -17,4 +17,30 @@ if (units == tenThousand && dozits == thousand)
 }
 else { Console.WriteLine($"No, {number} isn't palindrome"); }
 
+// Напишите программу, которая принимает на вход координаты двух точек
+// и находит расстояние между ними в 3D пространстве.
+// A (3,6,8); B (2,1,-7), -> 15.84
+// A (7,-5, 0); B (1,-1,9) -> 11.53
+
+Console.WriteLine("Input coordinates of two points: ");
+Console.Write("Point A (x): ");
+int coordinateAx = Convert.ToInt32(Console.ReadLine());
+Console.Write("Point A (y): ");
+int coordinateAy = Convert.ToInt32(Console.ReadLine());
+Console.Write("Point A (z): ");
+int coordinateAz = Convert.ToInt32(Console.ReadLine());
+Console.Write("Point B (x): ");
+int coordinateBx = Convert.ToInt32(Console.ReadLine());
+Console.Write("Point B (y): ");
+int coordinateBy = Convert.ToInt32(Console.ReadLine());
+Console.Write("Point B (z): ");
+int coordinateBz = Convert.ToInt32(Console.ReadLine());
+double distance = 0;
+distance = Math.Sqrt(Math.Pow(coordinateBx - coordinateAx, 2) +
+                     Math.Pow(coordinateBy - coordinateAy, 2) +
+                     Math.Pow(coordinateBz - coordinateAz, 2));
+Console.Write($"The distance between points in 3D space = {Math.Round(distance, 2)}");
+
+
+
 
