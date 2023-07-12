@@ -6,7 +6,7 @@
 
 Console.WriteLine("Input five-digit number: ");
 int number = Convert.ToInt32(Console.ReadLine());
-int tenThousand = (number / 10000) % 10;
+int tenThousand = number / 10000;
 int thousand = (number / 1000) % 10;
 int hundreds = (number / 100) % 10;
 int dozits = (number / 10) % 10;
