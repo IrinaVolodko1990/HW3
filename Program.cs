@@ -41,6 +41,26 @@ distance = Math.Sqrt(Math.Pow(coordinateBx - coordinateAx, 2) +
                      Math.Pow(coordinateBz - coordinateAz, 2));
 Console.Write($"The distance between points in 3D space = {Math.Round(distance, 2)}");
 
+//Напишите программу, которая принимает на вход число (N) 
+//и выдаёт таблицу кубов чисел от 1 до N.
+//3 -> 1, 8, 27
+//5 -> 1, 8, 27, 64, 125
 
+Console.Write("Input some number: ");
+int number = Convert.ToInt32(Console.ReadLine());
+if (number >= 1)
+{
+    for (int i = 1; i <= number; i++)
+    {
+        Console.Write($"{Math.Pow(i, 3)} ");
+    }
+}
+else
+{
+    for (int i = 1; i >= number; i--)
+    {
+        Console.Write($"{Math.Pow(i, 3)} ");
+    }
+}
 
 
